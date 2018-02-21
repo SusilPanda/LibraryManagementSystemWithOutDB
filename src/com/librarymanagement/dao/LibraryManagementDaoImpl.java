@@ -1,11 +1,6 @@
 package com.librarymanagement.dao;
 
-import java.sql.Connection;
 import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
@@ -14,8 +9,6 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.librarymanagement.bean.BookingDetails;
-import com.librarymanagement.bean.Reader;
-import com.librarymanagement.common.CommonConstants;
 import com.librarymanagement.common.LibraryManagementException;
 import com.librarymanagement.common.LibraryManagementUtility;
 
@@ -97,20 +90,20 @@ public class LibraryManagementDaoImpl implements LibraryManagementDao {
 
 	@Override
 	public int getCount(int readerId) throws LibraryManagementException {
-		long numberOfBooksBorrowed = 0;
+		int numberOfBooksBorrowed = 0;
 		
 		try {
-			numberOfBooksBorrowed = bookingMap.values().stream().filter(param -> param.getReaderId() == readerId).count();
+			numberOfBooksBorrowed = (int) bookingMap.values().stream().filter(param -> param.getReaderId() == readerId).count();
 		} catch (Exception e) {
 			LOGGER.severe("Exception in get count of booking : " + e.getMessage());
 			throw new LibraryManagementException(e.getMessage());
 		}
 		
-		return (int)numberOfBooksBorrowed;
+		return numberOfBooksBorrowed;
 	}
 
 	@Override
-	public boolean get(int readerId, long bookId) throws LibraryManagementException {
+	public boolean verifyBooking(int readerId, long bookId) throws LibraryManagementException {
 		
         boolean isPresent = false;
 		

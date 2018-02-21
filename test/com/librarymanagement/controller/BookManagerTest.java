@@ -7,7 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.librarymanagement.bean.Book;
@@ -21,13 +20,6 @@ public class BookManagerTest {
 
 	private static Book bookJava = null;
 	private static Book bookSql = null;
-
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	/*	DataBaseConnection.setUp();
-		DataBaseConnection.insertDefaultDataInDb(1, "Monthly", 30);
-		DataBaseConnection.insertDefaultDataInDb(2, "Annually", 365);*/
-	}
 
 	/**
 	 * @throws java.lang.Exception

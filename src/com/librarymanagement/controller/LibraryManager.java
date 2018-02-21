@@ -98,7 +98,7 @@ public class LibraryManager {
 
 	private boolean getAlreadyBorrowed(int readerId, long bookId) throws LibraryManagementException {
 		LibraryManagementDao bookingDao = new LibraryManagementDaoImpl();
-		return  bookingDao.get(readerId, bookId);
+		return  bookingDao.verifyBooking(readerId, bookId);
 	}
 
 	/**

@@ -2,6 +2,9 @@ package com.librarymanagement.common;
 
 public class CommonConstants {
 	
+	// to restrict object creation from outside
+	private CommonConstants() {}
+	
 	// table creation query string
 	public static final String CREATE_TABLE_READER_QUERY = "CREATE TABLE IF NOT EXISTS READER(readerid int primary key, name varchar(255),"
 			+ "username varchar(35), password varchar(35), emailid varchar(30), subscriptionid int)";

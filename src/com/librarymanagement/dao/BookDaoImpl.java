@@ -16,11 +16,6 @@ public class BookDaoImpl implements BookDao {
 	private final static Logger LOGGER = Logger.getLogger(BookDaoImpl.class.getName());
 	private static Map<Long, Book> bookMap =  new HashMap<>();
 	
-	public BookDaoImpl() {
-	//	dbConnection = DataBaseConnection.getDbConnection();
-	//	bookMap = new HashMap<>();
-	}
-
 	@Override
 	public Book get(long bookId) throws LibraryManagementException {
 		Book book = null;

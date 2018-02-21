@@ -1,19 +1,12 @@
 package com.librarymanagement.dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import com.librarymanagement.bean.Book;
 import com.librarymanagement.bean.Reader;
-import com.librarymanagement.common.CommonConstants;
 import com.librarymanagement.common.LibraryManagementException;
 import com.librarymanagement.common.LibraryManagementUtility;
 
@@ -22,9 +15,6 @@ public class ReaderDaoImpl implements ReaderDao {
 	private static final Logger LOGGER = Logger.getLogger(ReaderDaoImpl.class.getName());
 	private static Map<Integer, Reader> readerMap = new HashMap<>();
 	
-	public ReaderDaoImpl() {
-	}
-
 	@Override
 	public Reader get(int readerId) throws LibraryManagementException {
 		

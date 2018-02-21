@@ -13,6 +13,6 @@ public interface LibraryManagementDao {
 	public void update(BookingDetails booking) throws LibraryManagementException;
 	public void delete(long bookingId) throws LibraryManagementException;
 	public int getCount(int readerId) throws LibraryManagementException;
-	public boolean get(int readerId, long bookId) throws LibraryManagementException;
+	public boolean verifyBooking(int readerId, long bookId) throws LibraryManagementException;
 	
 }
