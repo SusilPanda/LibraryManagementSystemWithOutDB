@@ -1,5 +1,10 @@
 package com.librarymanagement.common;
 
+/** Common constant class which will contains all the application's 
+ *  constant at one place.
+ * @author susilpanda
+ *
+ */
 public class CommonConstants {
 	
 	// to restrict object creation from outside

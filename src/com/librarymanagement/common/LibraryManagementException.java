@@ -1,5 +1,9 @@
 package com.librarymanagement.common;
 
+/** Custom exception class for application level exception.
+ * @author susilpanda
+ *
+ */
 public class LibraryManagementException extends Exception {
 
 	/**

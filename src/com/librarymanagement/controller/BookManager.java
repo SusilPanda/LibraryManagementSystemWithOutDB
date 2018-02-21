@@ -7,8 +7,6 @@ import com.librarymanagement.dao.BookDaoImpl;
 
 public class BookManager {
 	
-	
-
 	/**
 	 * @param bookId
 	 * @return

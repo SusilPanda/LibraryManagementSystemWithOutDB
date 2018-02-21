@@ -1,7 +1,11 @@
 package com.librarymanagement.bean;
 
-import java.sql.Date;
+import java.util.Date;
 
+/** Booking Details pojo class contains the booking details.
+ * @author esusich
+ *
+ */
 public class BookingDetails {
 
 	private long bookingId;
@@ -68,7 +72,7 @@ public class BookingDetails {
 	/**
 	 * @return the borrowDate
 	 */
-	public java.sql.Date getBorrowDate() {
+	public Date getBorrowDate() {
 		return borrowDate;
 	}
 	/**

@@ -5,6 +5,10 @@ import com.librarymanagement.common.LibraryManagementException;
 import com.librarymanagement.dao.ReaderDao;
 import com.librarymanagement.dao.ReaderDaoImpl;
 
+/** Reader Manager class to manage all the operations of a Reader.
+ * @author susilpanda
+ *
+ */
 public class ReaderManager {
 	
 	/**

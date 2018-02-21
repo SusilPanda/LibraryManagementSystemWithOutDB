@@ -1,8 +1,11 @@
 package com.librarymanagement.bean;
 
+/** Reader pojo class contains the reader details.
+ * @author susilpanda
+ *
+ */
 public class Reader {
 	
-
 	private int readerId;
 	private String readerName;
 	private String userName;
@@ -18,7 +21,6 @@ public class Reader {
 		this.password = password;
 		this.emailId = emailId;
 		this.subscriptionId = subId;
-		
 	}
 	
 	/**

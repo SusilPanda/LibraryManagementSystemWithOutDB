@@ -1,5 +1,9 @@
 package com.librarymanagement.bean;
 
+/** Book pojo class contains the book details.
+ * @author susilpanda
+ *
+ */
 public class Book {
 
 	

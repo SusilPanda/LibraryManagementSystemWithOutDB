@@ -6,6 +6,10 @@ import com.librarymanagement.bean.Reader;
 
 public class LibraryManagementUtility {
 
+	/** Utility method to check basic null , empty or invalid parameters.
+	 * @param param
+	 * @return
+	 */
 	public static boolean validateParameters(Object param) {
 
 		if (param instanceof Integer) {
@@ -18,6 +22,12 @@ public class LibraryManagementUtility {
 		return false;
 	}
 
+	/** Utility method to copy the persistence values from DB,
+	 *  which are not present in the target/updated object.
+	 * @param source
+	 * @param target
+	 * @return
+	 */
 	public static Book copyBookUpdatedFields(Book source, Book target) {
 
 		if (target.getAuthor() == null) {
@@ -44,6 +54,12 @@ public class LibraryManagementUtility {
 		return target;
 	}
 
+	/** Utility method to copy the persistence values from DB,
+	 *  which are not present in the target/updated object.
+	 * @param source
+	 * @param target
+	 * @return
+	 */
 	public static Reader copyReaderUpdatedFields(Reader source, Reader target) {
 		
 		if (target.getReaderName() == null) {
@@ -67,6 +83,12 @@ public class LibraryManagementUtility {
 		return target;
 	}
 
+	/** Utility method to copy the persistence values from DB,
+	 *  which are not present in the target/updated object.
+	 * @param source
+	 * @param target
+	 * @return
+	 */
 	public static BookingDetails copyBookingUpdatedFields(BookingDetails source, BookingDetails target) {
 
 		if (target.getBookId() == 0L) {

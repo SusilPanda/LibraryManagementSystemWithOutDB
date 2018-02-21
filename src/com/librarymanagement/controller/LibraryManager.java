@@ -21,14 +21,6 @@ public class LibraryManager {
 	private static final Logger LOGGER = Logger.getLogger(LibraryManager.class.getName());
 
 	/**
-	 * @return
-	 */
-	public List<Book> getAllAvailableBooks() {
-
-		return null;
-	}
-
-	/**
 	 * Method to get all borrowed books.
 	 * @return
 	 * @throws LibraryManagementException
@@ -181,4 +173,9 @@ public class LibraryManager {
 	public Book searchABook() {
 		return new Book();
 	}
+	
+	public List<Book> getAllAvailableBooks() {
+		return null;
+	}
+
 }
