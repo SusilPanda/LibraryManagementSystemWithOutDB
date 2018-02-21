@@ -17,7 +17,6 @@ import com.librarymanagement.bean.Book;
 import com.librarymanagement.bean.BookingDetails;
 import com.librarymanagement.bean.Reader;
 import com.librarymanagement.common.LibraryManagementException;
-import com.librarymanagement.dao.DataBaseConnection;
 
 public class LibraryManagerTest {
 

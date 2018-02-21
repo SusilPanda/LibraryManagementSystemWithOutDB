@@ -10,7 +10,6 @@ import org.junit.Test;
 import com.librarymanagement.bean.Reader;
 import com.librarymanagement.common.LibraryManagementException;
 import com.librarymanagement.controller.ReaderManager;
-import com.librarymanagement.dao.DataBaseConnection;
 
 public class ReaderManagerTest {
 	

@@ -12,7 +12,6 @@ import org.junit.Test;
 
 import com.librarymanagement.bean.Book;
 import com.librarymanagement.common.LibraryManagementException;
-import com.librarymanagement.dao.DataBaseConnection;
 
 /**
  * @author esusich
